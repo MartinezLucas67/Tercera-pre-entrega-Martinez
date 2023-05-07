@@ -17,12 +17,11 @@ class Profesor(models.Model):
     nombre = models.CharField(max_length=256)
     apellido = models.CharField(max_length=256)
     fecha_nacimiento = models.DateField
-    dni = models.CharField(max_length=32)
     telefono = models.CharField(max_length=20)
     email = models.EmailField()
     biografia = models.TextField()
 
-class Entregable(models.Model):
+class Entrega(models.Model):
     nombre = models.CharField(max_length=256)
     fecha_entrega = models.DateTimeField()
     esta_aprobado = models.BooleanField(default=False)
