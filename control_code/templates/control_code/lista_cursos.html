@@ -1,15 +1,14 @@
 {% extends "control_code/base.html" %}
 
-{% block contenido%}
+{% block contenido %}
 <section>
-    <div>
-        <h1>Lista de cursos</h1>
-        <ul>
-        {% for curso in cursos %}
-            <li>{{ curso.nombre }}, {{ cruso.comision }}</li>
-        {% endfor%}
-        </ul>
-        </h1>
-    </div>
+  <div>
+    <h1>Lista de cursos</h1>
+    <ul>
+    {% for curso in cursos %}
+      <li>{{ curso.nombre }}, {{ curso.comision }}</li>
+    {% endfor %}
+    </ul>
+  </div>
 </section>
 {% endblock contenido %}
