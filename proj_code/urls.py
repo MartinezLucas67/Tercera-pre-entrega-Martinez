@@ -21,5 +21,6 @@ from proj_code.views import inicio
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('estudios/', include("control_code.urls")),
+    path('registro/', include("control_code.urls")),
     path('', inicio, name="inicio"),
 ]
