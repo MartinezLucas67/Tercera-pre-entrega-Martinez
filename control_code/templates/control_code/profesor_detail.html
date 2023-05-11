@@ -1,0 +1,26 @@
+{% extends "control_code/base.html" %}
+
+{% block contenido %}
+
+<p>
+    <strong>Nombre:</strong> {{object.nombre}}
+</p>
+<p>
+    <strong>Apellido:</strong> {{object.apellido}}
+</p>
+<p>
+    <strong>DNI:</strong> {{object.dni}}
+</p>
+<p>
+    <strong>Telefono:</strong> {{object.telefono}}
+</p>
+<p>
+    <strong>Email:</strong> {{object.email}}
+</p>
+<p>
+    <strong>Biografia:</strong> {{object.biografia}}
+</p>
+<br>
+<a href="{% url 'lista_profesores' %}">Volver lista</a>
+
+{% endblock contenido %}
