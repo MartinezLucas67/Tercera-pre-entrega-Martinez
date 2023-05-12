@@ -28,9 +28,5 @@ class Profesor(models.Model):
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
 
-class Entrega(models.Model):
-    nombre = models.CharField(max_length=256)
-    fecha_entrega = models.DateTimeField()
-    esta_aprobado = models.BooleanField(default=False)
 
  
