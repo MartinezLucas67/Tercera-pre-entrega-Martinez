@@ -18,14 +18,3 @@ class ProfesorForm(forms.ModelForm):
     class Meta:
         model = Profesor
         fields = '__all__'#['nombre', 'apellido', 'fecha_nacimiento', 'dni', 'telefono', 'email', 'biografia']
-
-
-'''class BuscarForm(forms.Form):
-    busqueda = forms.CharField(max_length=100)
-    opciones = (
-        ('estudiantes', 'Estudiantes'),
-        ('cursos', 'Cursos'),
-        ('profesores', 'Profesores'),
-    )
-    categoria = forms.ChoiceField(choices=opciones) '''
-
